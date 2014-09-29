@@ -154,7 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (~> 1.53.0)
-  bootstrap-sass
+  bootstrap-sass (~> 3.2.0.2)
   coffee-rails (~> 4.0.0)
   devise (~> 3.3.0.rc2)
   jbuilder (~> 2.0)
