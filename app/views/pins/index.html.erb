@@ -5,9 +5,14 @@
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
-        <p><%= pin.description %></p>
-        <p><strong><%= pin.user.name if pin.user %></strong></p>
-        
+        <div class="time">
+          <P><%= time_ago_in_words pin.created_at %> ago </p>
+        </div> </br>
+        <div class="description">
+          <p><%= pin.description %></p>
+        </div>
+          <p><strong><FONT COLOR=#c0392b>Posted by: </FONT></strong> <%= pin.user.name if pin.user %></p>
+      
         <% if current_user && (pin.user == current_user) %>
           <div class="actions">
             <%= link_to edit_pin_path(pin) do %>
