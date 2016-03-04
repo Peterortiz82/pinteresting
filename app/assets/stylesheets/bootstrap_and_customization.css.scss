@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css);
 
 $body-bg:                        #ecf0f1;
 $font-family-sans-serif:         'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8,7 +9,13 @@ $navbar-default-brand-color:     #c0392b;
 $brand-primary:                  #c0392b;
 $jumbotron-bg:                   white;
 
+
+	
+
+
 @import 'bootstrap';
+
+
 
 .center {
      text-align: center;
@@ -16,4 +23,13 @@ $jumbotron-bg:                   white;
 
 .navbar-brand {
      font-weight: bold;
+}
+
+.bs-docs-footer {
+padding-top: 40px;
+padding-bottom: 40px;
+margin-top: 100px;
+color: #000000;
+text-align: center;
+border-top: 1px solid #000000;
 }
