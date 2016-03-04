@@ -3,7 +3,10 @@
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
-      <%= link_to image_tag(pin.image.url(:medium)), pin %>
+      <div class="panel-heading center">
+        <%= link_to image_tag(pin.image.url(:medium)), pin %>
+      </div>
+      
       <div class="panel-body">
         <div class="time">
           <P><%= time_ago_in_words pin.created_at %> ago </p>

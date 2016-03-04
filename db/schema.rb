@@ -13,6 +13,13 @@
 
 ActiveRecord::Schema.define(version: 20140929211355) do
 
+  create_table "people", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "login"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pins", force: true do |t|
     t.string   "description"
